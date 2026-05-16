@@ -12,7 +12,7 @@ files = [
     f'src/{Project_name}/Components/data_ingestion.py',
     f'src/{Project_name}/Components/data_transformation.py',
     f'src/{Project_name}/Components/model_trainer.py',
-    f'src/{Project_name}/components/model_monitoring.py',
+    f'src/{Project_name}/Components/model_monitoring.py',
     f'src/{Project_name}/Pipelines/__init__.py',
     f'src/{Project_name}/Pipelines/training_pipeline.py',
     f'src/{Project_name}/Pipelines/prediction_pipeline.py',
