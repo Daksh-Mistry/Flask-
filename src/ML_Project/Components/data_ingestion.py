@@ -1,5 +1,4 @@
 import os
-import sys
 import pandas as pd
 from dataclasses import dataclass
 from src.ML_Project.logger import logger
@@ -38,4 +37,4 @@ class DataIngestion:
             return (self.config.train_data_path, self.config.test_data_path)
 
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e)

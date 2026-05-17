@@ -24,9 +24,9 @@ def read_data():
             password= password,
             db = db
         )
-        logger.info("Connected to : ", database)
+        logger.info("Connected to database")
 
-        data = pd.read_sql_query('Select * from table_name', database)
+        data = pd.read_sql_query('Select * from fish', database)
 
         return data
 

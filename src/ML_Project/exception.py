@@ -20,7 +20,7 @@ class CustomException(Exception):
     """Custom exception for the ML project with traceable error context."""
 
     def __init__(self, error_message: Any, error_detail: Any = None):
-        if error_detail is None:
+        if error_detail is None or error_detail is sys:
             error_detail = sys.exc_info()
         self.error_message = self._format_error_message(error_message, error_detail)
         super().__init__(self.error_message)

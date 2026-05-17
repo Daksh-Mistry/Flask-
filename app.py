@@ -1,7 +1,6 @@
 from src.ML_Project.logger import logger
 from src.ML_Project.exception import CustomException
 from src.ML_Project.Components.data_ingestion import DataIngestion
-import sys
 
 if __name__ == "__main__":
 
@@ -11,4 +10,4 @@ if __name__ == "__main__":
         train_path, test_path = data_ingestion.setup()
 
     except Exception as e:
-        raise CustomException(e, sys)
+        raise CustomException(e)
